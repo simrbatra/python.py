@@ -1,0 +1,109 @@
+(a):
+Ans 1:
+def max2(a,b):
+    if a>b:
+        return a
+    return b
+def max3(a,b,c):
+    return max2(a,max2(b,c))
+print(max3(1,5,9))
+
+
+Ans 2:
+a=8
+b=2
+c=3
+d=0
+e=7
+sum=a+b+c+d+e
+print(sum)
+
+
+Ans 3:
+a=8
+b=2
+c=3
+d=-1
+e=7
+multiply=a*b*c*d*e
+print(multiply)
+
+
+Ans 4:
+a='"1234abcd"'[::-1]
+print(a)
+
+
+Ans 5:
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n* factorial(n-1)
+n=6
+print(factorial(n))
+
+
+Ans 6:
+def unique(a):
+    unique_a=[]
+    for x in a:
+        if x not in unique_a:
+            unique_a.append(x)
+    for x in unique_a:
+        print(x)
+a=1,2,5,2,5,1,3,7,9
+print(unique(a),end=",")
+
+
+Ans 7:
+list1 = [1,2,3,4,5,6,7,8,9]
+for num in list1:
+    if num % 2 == 0:
+        print(num, end=" ")
+
+
+
+
+(b):
+Ans 1:
+for i in range(1,11):
+    print(i)
+
+
+Ans 2:
+row = 5
+for i in range(1,row+1):
+    for j in range(1, i+1):
+        print(j,end=" ")
+    print('')
+
+
+Ans 3:
+sum=0
+for i in range(1,11):
+    sum=sum+i
+print(sum)
+
+
+Ans 4:
+row = 5
+for i in range(row, 0,-1):
+    for j in range(1, i+1):
+        print(j,end=" ")
+    print('\r')
+
+
+Ans 5:
+lower=1
+upper=100
+for num in range(lower,upper+1):
+    if num>1:
+        for i in range(2,num):
+            if (num%i) == 0:
+                break
+        else:
+            print(num)
+
+
+
